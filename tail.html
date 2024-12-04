@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DTech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-2xl font-bold">
+                <a href="#">ZeeTech</a>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a class="hover:text-gray-400" href="#">Services</a>
+                <a class="hover:text-gray-400" href="#">About</a>
+                <a class="hover:text-gray-400" href="#">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden text-xl bg-gray-800 text-white p-4">
+        <a class="block py-2" href="#">Services</a>
+        <a class="block py-2" href="#">About</a>
+        <a class="block py-2" href="#">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-pink-300 to-orange-400 text-white text-center py-20 md:py-24 px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            We Build Innovative Tech Solutions
+        </h1>
+        <p class="text-xl mb-8">
+            From Software to Hardware, Training to Branding, We handle everything
+        </p>
+        <a class="bg-white text-orange-500 px-6 py-4 rounded-md font-semibold text-lg" href="#">
+            Get In Touch
+        </a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 underline">
+                Our Services
+            </h2>
+            <p class="text-gray-600 mb-10">
+                We offer a wide range of services to cater to all your tech needs
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">
+                        Software Development
+                    </h3>
+                    <p class="text-gray-600">
+                        Custom software solutions tailored to your business needs
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">
+                        Hardware Installations
+                    </h3>
+                    <p class="text-gray-600">
+                        Setting up the right hardware for your operations
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">
+                        Tech Training
+                    </h3>
+                    <p class="text-gray-600">
+                        Upskill your team with hands-on tech training programs
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">
+                        Tech Consulting And Recruitment
+                    </h3>
+                    <p class="text-gray-600">
+                        Expert guidance and staffing solutions for your tech projects
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-md shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">
+                        Branding And Graphics
+                    </h3>
+                    <p class="text-gray-600">
+                        Professional branding and graphic design services
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">
+                        End To End Tech Solutions
+                    </h3>
+                    <p class="text-gray-600">
+                        Comprehensive solutions for all your technical needs
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-100 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h2 class="text-3xl font-bold mb-4">
+                    Who We Are
+                </h2>
+                <p class="text-gray-600 mb-10 text-lg max-w-xl">
+                    DTech is a one-stop shop for all things tech. Our team of experts is committed to delivering
+                    innovative and reliable solutions tailored to your needs.
+                </p>
+                <a class="bg-orange-400 text-white px-6 py-4 rounded-md font-bold" href="#">
+                    Learn More
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <img alt="Abstract sculpture of 2 faces" class="rounded-lg shadow-md" height="300"
+                    src="./img/two-faces.jpg"
+                    width="600" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">
+                Get In Touch
+            </h2>
+            <p class="text-gray-600 mb-8">
+                Let build something great together
+            </p>
+            <form class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <input class="p-4 border border-gray-300 rounded-lg" placeholder="Your Name..." type="text" />
+                    <input class="p-4 border border-gray-300 rounded-lg" placeholder="Your Email..." type="email" />
+                </div>
+                <textarea class="w-full p-4 border border-gray-300 rounded-lg mb-4"
+                    placeholder="Your Message..."></textarea>
+                <button class="bg-pink-400 text-white px-6 py-4 rounded-md font-semibold" type="submit">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>
+            © ZeeTech. All rights reserved
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the mobile menu
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
